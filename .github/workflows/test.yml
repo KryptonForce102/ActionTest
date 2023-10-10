@@ -7,7 +7,7 @@ env:
   color_prefix: \033[38;2;
   color_suffix: \033[0m
   warn_color: 235;195;59m
-  TEST: TEST
+  TEST: TESTING 123
 
 jobs:
   CI:
