@@ -1,0 +1,21 @@
+name: 'Compile Game'
+
+on:
+  workflow_dispatch
+
+env:
+  color_prefix: \033[38;2;
+  color_suffix: \033[0m
+  warn_color: 235;195;59m
+  TEST: TEST
+
+jobs:
+  CI:
+    name: CI + Deployment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Print
+        run: echo -e $TEST
